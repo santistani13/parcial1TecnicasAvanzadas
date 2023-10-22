@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagen_receta"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars"
+         />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombre"
+        android:layout_marginLeft="16dp"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="16dp"
+        app:layout_constraintStart_toEndOf="@id/imagen_receta"
+        app:layout_constraintTop_toTopOf="@id/imagen_receta"
+        />
+
+    <TextView
+        android:id="@+id/origen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:text="Origen"
+        app:layout_constraintStart_toEndOf="@id/imagen_receta"
+        app:layout_constraintTop_toBottomOf="@id/nombre" />
+
+    <TextView
+        android:id="@+id/dificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dificultad"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="18dp"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="124dp"
+        app:layout_constraintStart_toEndOf="@id/imagen_receta"
+        app:layout_constraintTop_toBottomOf="@id/origen"/>
+
+    <TextView
+        android:id="@+id/ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen_receta"
+        tools:text="Ingredientes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
